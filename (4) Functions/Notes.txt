@@ -1,0 +1,19 @@
+whenever a js code is run a "Global Execution Context" is created.
+
+It consists of two parts -->
+
+    1. MCP(Memory Creation Phase)
+        -->In this phase all the variables and functions are allocated memory in this phase(Before the exection of the code).
+        -->In this phase js does'nt know about the actual values of the variables  as the code is not run yet, so it allocates them
+          with "undefined" value. 
+        -->But in Case of functions, they are completely copied as it is inside the MCP with actual  values
+        -->All the console statements and other statements which are not funciton or variable are not alloted any memory in MCP.
+
+    2. CEP(Code Execution Phase)
+        -->In this phase js code will run line by line
+        -->Now the variables will be asssigned there real value as the code is executed
+        -->In this phase a function will not be executed untill it is called inside the code, this means the function will only be executed at the line it is called.
+       *-->Now whenever a function is executed inside this phase we again create a "Execution Context"(Not the global one) inside this CEP(Code Execution Phase), which will have 
+           it's own MCP and CEP for the function.
+        -->When function is completely executed then "Execution Context" inside CEP is destroyed 
+    Now when the complete code is executed then the "Global Execution Context" will be destroyed.

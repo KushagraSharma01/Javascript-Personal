@@ -1,0 +1,23 @@
+Programming Language -->
+    Languages by using we can write logic depending on our own logical abilities
+    34:45
+    18
+Primitive Datatypes -->
+    Datatypes which can not be broken down 
+    into simpler forms
+
+There are 7 Primitive Datatypes->
+    String
+    Number
+    Boolean
+    undefined
+    null
+    bigint
+    symbol
+
+Console -->
+    It is a REPL
+    READ
+    EVALUATE
+    PRINT 
+    LOOP

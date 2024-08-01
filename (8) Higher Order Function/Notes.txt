@@ -1,0 +1,6 @@
+Higher Order Function -->
+    Functions that operate on other functions either by 
+    1. taking them as an argument or
+    2. returning them
+    are called Higher Order Function
+
