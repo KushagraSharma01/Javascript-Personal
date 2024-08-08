@@ -1,0 +1,47 @@
+# DOM (Document Object Model)    -->
+        Document --> HTML   
+        Object   --> Js Object
+        Model    --> Modelling or Manipulating (to change)
+
+**This means we can change our HTML with the help of Js
+
+So we do'nt need to go inside the HTML to change it, we can use Js for that
+
+------------------------------------------------------------------------------
+
+# Browser 
+    Browser provides us an object which is called "document"
+
+**when we type "document" on the console of browser, it gives us the complete
+HTML code for the webpage (more specifically it gives the "DOM tree" of the webpage)
+
+DOM tree -->    (refer to notebook for more clear diagram)
+        HTML -->
+            head --> 
+                link
+                title
+                meta
+
+            body -->
+                section
+                p tag
+                div
+                ul tag -->
+                    li tag
+                etc..
+
+the entire HTML is converted into an object called "document"
+on the browser 
+
+Now in order to change or manipulate the html we should know which element
+or part of the html page should be changed or manipulated
+
+This can be done by using different "Selectors"
+
+Selectors :-
+    1. getElementByTagName --> by selecting the element with it's tag name
+    2. getElementById  --> by giving id to the element (as we used to do for applying css)
+    3. getElementByClass --> by selecting the element with it's class name
+    4. querySelector --> selects only one element
+    5. querySelectorAll --> selects all elements according to the query
+

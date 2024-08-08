@@ -91,15 +91,15 @@ function step4(finalimage){
 
 //calling
 
-step1(function(image){
-    step2(image, function(filteredimage){
-        step3(filteredimage, function(finalimage){
-            step4(finalimage);
+step1(function(image){                  //calling step1 and passing function as argument
+    step2(image, function(filteredimage){      //calling step2 annd passing image from step1 and also a function(to call step3)
+        step3(filteredimage, function(finalimage){  //calling step3 and paaing filtered image from step2 and also a function(to call step4)
+            step4(finalimage);  //calling step4 and only passing final image from step3 (and no function as no need to call another function)
         })
     });
 });
 
-//passed the functions(callbacks) in arguments so that to call them in order
+//passed the functions(callbacks) in arguments so that we can call them in order
 //from inside the respective functions(steps)
 
 //**IMP
@@ -110,5 +110,5 @@ step1(function(image){
 
 //-----------------------------------------------------------------------------------------
 
-//Now to resolve it we use promises (and then to resolve thier issue we use async-await)
+//Now to resolve it we use promises (and then to resolve their issue we use async-await)
   
