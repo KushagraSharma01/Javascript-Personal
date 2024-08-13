@@ -1,0 +1,16 @@
+.sam{
+    background-color: peru;
+}
+
+.samarth{
+    font-size: 30px;
+}
+
+.changu-mangu :hover{
+    background-color: blue;
+    /* transition: 2ms ease; */
+}
+
+.toggle{
+    background-color: cyan;
+}
