@@ -208,3 +208,7 @@
 
 
 //5. Arrow functions
+
+//In case of Arrow Functions, "this" points to the lexical parent ka "this"
+    //this.(context)
+//where parent's this will point, same will be pointed by the "this" of Arrow Function
